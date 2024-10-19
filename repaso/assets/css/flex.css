@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  min-width: 414px;
+}
+
+.container-top {
+  background-color: blueviolet;
+  height: 80px;
+  width: 100%;
+}
+
+.video {
+  height: 350px;
+  width: 100%;
+}
+
+.boton {
+  background-color: rgb(193, 196, 196);
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.box-morado {
+  background-color: blueviolet;
+  height: 50px;
+  width: 200px;
+}
+
+.contenido {
+  background-color: rgb(85, 85, 85);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 414px;
+}
+
+.contenido > div {
+  flex: 1 1 22%;
+  padding: 30px;
+  color: white;
+  text-align: justify;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+  .contenido div {
+    flex: 1 1 100%; /* Un solo bloque ocupa el 100% en pantallas pequeñas */
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .contenido div {
+    flex: 1 1 48%; /* En tablets, los bloques ocupan aproximadamente la mitad del ancho */
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1025px) {
+  .contenido div {
+    flex: 1 1 22%; /* En pantallas grandes, los bloques ocupan aproximadamente un cuarto del ancho */
+  }
+}
